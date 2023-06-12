@@ -21,7 +21,7 @@
     <header>
         <nav class="primary-nav">
             <ul role="list" class="nav-list">
-                <li class="active">
+                <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
@@ -30,7 +30,7 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -38,17 +38,17 @@
     </header>
 
     <main id="main-content">
-        <div class="container">
-            <section aria-labelledby="hero-title" class="hero">
-                <h1 id="hero--title" class="hero--title">
-                    Hi, I'm Jackson. I'm an IT professional with a passion for web development/design.
-                </h1>
-                <div class="hero--paragraph flow">
-                    <p>I graduated in the Spring of 2023 with a Bachelor of Science in Computer Science with a concentration in Information Technology from East Tennessee State University in Johnson City, TN.</p>
-                    <p>I learned how to make websites on my own. I love being able to learn new concepts and apply them to my projects.<strong> Whether you're just looking to connect, or need a website, I'm here to help.</strong></p>
-                </div>
-                <picture><img src="images/Jackson_Portrait.jpg" alt="Jackson Smiling"></picture>
-            </section>
+        <div class="container flow">
+            <h1 class="title">Contact Me</h1>
+            <p>Please feel free to fill out the form below to get in touch with me. Thanks!</p>
+            <form action="https://formsubmit.co/jacksonrcoffey@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Email - JC">
+                <input type="text" name="fname" placeholder="First Name" required>
+                <input type="text" name="lname" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="hidden" name="_next" value="thankyou.html"><br>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </main>
 
