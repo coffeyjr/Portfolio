@@ -9,7 +9,7 @@
     <meta property="og:title" content="Jackson Coffey | Jackson Coffey">
 	<meta property="og:description" content="">
 	<meta property="og:url" content="https://jacksoncoffey.vercel.app/">
-    <title>Jackson Coffey</title>
+    <title>Contact Me</title>
     <link rel="icon" href="images/JC.png">
     <link rel="stylesheet" href="style.css">
     <script defer src="/_vercel/insights/script.js"></script>
@@ -21,7 +21,7 @@
     <header>
         <nav class="primary-nav">
             <ul role="list" class="nav-list">
-                <li class="active">
+                <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
@@ -30,7 +30,7 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -38,19 +38,31 @@
     </header>
 
     <main id="main-content">
-        <div class="container">
-            <section aria-labelledby="hero-title" class="hero">
-                <h1 id="hero--title" class="hero--title">
-                    Hi, I'm Jackson. I'm an IT professional with a passion for web development/design.
-                </h1>
-                <div class="hero--paragraph flow">
-                    <p>I graduated in the Spring of 2023 with a Bachelor of Science in Computer Science with a concentration in Information Technology from East Tennessee State University in Johnson City, TN.</p>
-                    <p>I learned how to make websites on my own. I love being able to learn new concepts and apply them to my projects.<strong> Whether you're just looking to connect, or need a website, I'm here to help.</strong></p>
+        <div class="container flow">
+            <h1 class="title" id="contact">Contact me</h1>
+            <p>Please feel free to fill out the form below to get in touch with me. Thanks!</p>
+            <form action="https://formsubmit.co/e66a989123357047c8b809e1d572868a" method="POST">
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Email - JC">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I will be in touch with you shortly.">
+
+                <p>First Name</p>
+                <input type="text" name="First Name" required>
+                <p>Last Name</p>
+                <input type="text" name="Last Name" required>
+                <p>Email Address</p>
+                <input type="email" name="Email" required>
+                <p>Message</p>
+                <div>
+                    <textarea name="Message" rows="5"></textarea>
                 </div>
-                <picture><img src="images/Jackson_Portrait.jpg" alt="Jackson Smiling"></picture>
-            </section>
+                <input type="hidden" name="_next" value="https://jacksoncoffey.vercel.app/thankyou.html">
+                <button type="submit" class="submit">Send</button>
+            </form>
         </div>
     </main>
+
 
     <footer class="primary-footer">
         <p>Find me here as well:</p>
