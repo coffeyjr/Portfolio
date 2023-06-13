@@ -8,6 +8,7 @@
     --clr-primary: #264653 ;
     --clr-secondary: #E9C46A ;
     --clr-accent: #7CA5B8;
+    --clr-secondary-accent: #FE5F55;
     --clr-footer: #DEDEDE;
     --clr-neutral: #FCEFF9;
     --clr-grey: #4d4d4d;
@@ -107,6 +108,10 @@ li:not([class]), p:not([class]), ul:not([class]) {
 
 .primary-nav li:nth-child(3) {
     --clr: var(--clr-accent);
+}
+
+.primary-nav li:nth-child(4) {
+    --clr: var(--clr-secondary-accent);
 }
 
 .primary-nav li.active a {
@@ -344,3 +349,75 @@ h1 {
 ----End of about me Styling---
 -----------------------------
 ----------------------------- */
+
+
+/*---------------------------
+-----------------------------
+---Styling for Contact Page--
+-----------------------------
+----------------------------- */
+#contact {
+    color: var(--clr-secondary-accent);
+}
+
+input, textarea {
+    padding: .5em;
+    width: 100%;
+    border: 1px solid var(--clr-secondary-accent);
+    outline: none;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+.submit {
+    font-weight: 700;
+    background-color: var(--clr-secondary-accent);
+    border: 0;
+    border-radius: 100vw;
+    box-shadow: 0 0.125em 0.5em rgba(0,0,0,.15);
+    color: var(--clr-neutral);
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--fs-300);
+    letter-spacing: .04em;
+    line-height: 1;
+    padding: 0.95em 1.75em 0.85em;
+    position: relative;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform .2s ease,-webkit-transform .2s ease;;
+    text-transform: uppercase;
+}
+
+.submit:before {
+    background: #000;
+    border-radius: inherit;
+    bottom: 0;
+    -webkit-box-shadow: 0 0.5em 1.25em #000;
+    box-shadow: 0 0.5em 1.25em #000;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    z-index: -1;
+}
+
+.submit:focus,.submit:hover {
+    color: var(--clr-neutral);
+    -webkit-transform: scale(1.05) translateY(-.125em);
+    transform: scale(1.05) translateY(-.125em)
+}
+
+.submit:focus:before,.submit:hover:before {
+    opacity: .1
+}
+
+.submit[data-reverse=true] {
+    background-color: var(--clr-grey);
+    color: var(--clr,var(--clr-primary))
+}
