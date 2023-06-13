@@ -388,6 +388,7 @@ input, textarea {
     transform: scale(1);
     transition: transform .2s ease,-webkit-transform .2s ease;;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .submit:before {
@@ -421,3 +422,8 @@ input, textarea {
     background-color: var(--clr-grey);
     color: var(--clr,var(--clr-primary))
 }
+/*---------------------------
+-----------------------------
+----End of contact Styling---
+-----------------------------
+----------------------------- */
