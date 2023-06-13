@@ -9,8 +9,9 @@
     --clr-secondary: #E9C46A ;
     --clr-accent: #7CA5B8;
     --clr-secondary-accent: #FE5F55;
+    --clr-thankyou: #A6808C;
     --clr-footer: #DEDEDE;
-    --clr-neutral: #FCEFF9;
+    --clr-neutral: #FFF;
     --clr-grey: #4d4d4d;
 
     --section-spacing: 7rem;
@@ -342,6 +343,14 @@ h1 {
 
 #about {
     color: var(--clr-accent);
+}
+
+.about {
+    color: var(--clr-accent);
+}
+
+.about:hover {
+    color: var(--clr-primary);
 }
 
 /*---------------------------
