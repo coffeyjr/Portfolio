@@ -329,6 +329,14 @@ h1 {
     background-color: var(--clr-grey);
     color: var(--clr,var(--clr-primary))
 }
+
+.project {
+    color: var(--clr-secondary);
+}
+
+.project:hover {
+    opacity: .75;;
+}
 /*---------------------------
 -----------------------------
 ----End of Project Styling---
